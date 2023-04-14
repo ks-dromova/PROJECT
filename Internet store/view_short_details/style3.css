@@ -1,0 +1,170 @@
+
+.container{
+  background: white;
+  max-width: 1300px;
+}
+/*--------------------ХЛЕБНЫЕ КРОШКИ----------------------*/
+
+
+.breadcrumb{
+  margin-top: 70px;
+}
+ul.breadcrumb_ul {
+    padding: 10px 16px;
+    list-style: none;
+
+  }
+
+ul.breadcrumb_ul li {
+    display: inline;
+    font-size: 24px;
+
+  }
+
+  ul.breadcrumb_ul li + li::before {
+    padding: 12px;
+    color: black;
+    content: url("../img/breadcumps.svg");
+  }
+  /*------------------ВЫВОД КАРТОЧКИ----------------------*/
+  .card__container{
+margin-top: 130px;
+display: flex;
+justify-content: space-evenly;
+background-color: white;
+  }
+
+  /*---------------------ИКОНКИ С СОЦ СЕТЯМИ---------------------------*/
+  .social_media{
+   width: 100%;
+  }
+  .social_icons{
+    display: flex;
+    justify-content: space-evenly;
+    width: 40%;
+  }
+  .social_icons li{
+    list-style: none;
+  }
+/*-------------------БЛОК FREE DELIVERY-------------------------------*/
+.free_shop{
+ width: 650px;
+ height: 140px;
+ background: #FAFAFA;
+}
+ .free_shop_title{
+    font-size: 24px;
+    text-align: center;
+    padding-top: 17px;
+  }
+  .gorizont_line{
+  background-color:#A04955;
+  height: 1px;
+  width: 400px;
+  margin-top: 16px;
+  margin-left: 126px;
+  border: none;
+
+  }
+  .free_shop_description{
+    display: flex;
+    justify-content: space-evenly;
+
+  }
+  .free_delivery{
+    display: flex;
+    justify-content: space-evenly;
+    width: 40%;
+  }
+  .free_delivery_car{
+    margin-top: 8px;
+  }
+  .free_delivery_exchange{
+    display: flex;
+    justify-content: space-evenly;
+    width: 40%;
+    margin-top: 8px;
+  }
+  /*--------------------------КАРТОЧКА-------------------------*/
+  .card__img img{
+    width: 411px;
+    height: 400px;
+  }
+  .title{
+    font-size: 48px;
+
+  }
+  .title span{
+    font-size: 20px;
+
+  }
+ .price .money_price{
+  font-size: 36px;
+  font-weight: 600;
+ }
+ .colors{
+  display: flex;
+  justify-content: space-evenly;
+  width: 30%;
+
+ }
+.size{
+  display: flex;
+  justify-content: space-evenly;
+  width: 40%;
+  margin-top: 20px;
+}
+.size-item{
+background: #FFFFFF;
+border: 1px solid #C4C4C4;
+width: 46px;
+height: 32px;
+box-sizing: border-box;
+font-weight: 400;
+font-size: 18px;
+text-align: center;
+}
+.buttons{
+  display: flex;
+  margin-top: 20px;
+  justify-content: space-evenly;
+}
+.add_tobag{
+  background: #B93B54;
+  width: 315px;
+height: 56px;
+font-weight: 400;
+font-size: 24px;
+text-align: center;
+box-sizing: border-box;
+padding-top: 10px;
+}
+.add_wishlist{
+background: #FFFFFF;
+border: 1px solid #000000;
+width: 315px;
+height: 56px;
+font-weight: 400;
+font-size: 24px;
+text-align: center;
+box-sizing: border-box;
+padding-top: 10px;
+}
+/*---------------DETAILS-----------------------*/
+.detail_title{
+font-weight: 600;
+font-size: 48px;
+line-height: 71px;
+color: #333333;
+text-align: center;
+background-color: white;
+margin-top: 30px;
+text-transform: uppercase;
+}
+.details{
+  background: #FAFAFA;
+  padding: 50px;
+  box-sizing: border-box;
+  margin: 20px;
+  font-size: 14px;
+}
