@@ -1,5 +1,7 @@
 # Интернет-магазин
 
+Запуск проекта нужно производить через Live Server.
+
 С главной страницы осуществляется переход к каталогу с шортами в навигации header-а Shorts и по кнопке Shop all shorts.
 
 На странице с каталогом шорт можно перейти на страницу с деталями понравившегося товара, нажав на карточку товара. Также здесь можно отфильтровать товар,
@@ -9,6 +11,8 @@
 
 
 # Online store
+
+The project must be launched through Live Server.
 
 From the main page, you go to the catalog with shorts in the Shorts header navigation and by clicking the Shop all shorts button.
 
