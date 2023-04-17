@@ -1,4 +1,4 @@
-//import { catalog } from "../code/catalog.js";
+
 let currentPage = 1;
 let rows = 10,
 
@@ -171,47 +171,6 @@ document.querySelector('#filter_box').addEventListener('click', (event) => {
         colRez = [];
     }
 });
-
-/*----------------открываем страницу с деталями-работает только с первой стр пагинации--------------------
-
-    const [...productsCard] = document.querySelectorAll('.card');
-    productsCard.forEach((el) => el.addEventListener('click', (e) => {
-        const card = el;
-        console.log(el);
-        const productInfo = {
-            // id: card.dataset.id,
-            title: card.querySelector('.name').innerText,
-        };
-        console.log(productInfo);
-        window.open(`http://127.0.0.1:5500/page3/index.html?title=${productInfo.title}`);
-
-    }));*/
-    /*---------------------КНОПКА ДОБАВЛЕНИЯ В КОРЗИНУ-- работает только с первой стр пагинации-------------
-    let cart = []; // обьявляем корзину
-    const [...btns] = document.querySelectorAll('.add_card');
-    console.log(btns);
-    btns.forEach((b) => b.addEventListener('click', (e) => {
-        e.stopPropagation();
-        const btnBtn = b;
-        console.log(btnBtn);
-        const btnArt = {
-            item: btnBtn.dataset.art,
-        };
-        console.log(btnArt.item);
-
-        const elProduct = catalog.find((elem) => elem.item === parseInt(btnArt.item));
-        console.log(elProduct);
-
-        cart.push(elProduct);
-
-        localStorage.setItem('Product', JSON.stringify(cart));
-
-        console.log(cart);
-
-        window.open('http://127.0.0.1:5500/page4_cart/index.html');
-    }));*/
-
-
 
     /*----------------------ДОБАВЛЕНИЕ В КОРЗИНУ----------------------*/
     window.addEventListener('click', function (event) {

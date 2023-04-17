@@ -1,6 +1,6 @@
 
 const catalog = [
-    {        
+    {
         item: 10001,
         title: "Sportif's Original Short",
         price: 40,
@@ -26,7 +26,7 @@ const catalog = [
         size: [32, 34, 38, 40, 42, 46],
         color: ['beige', 'black', 'red'],
         details: ". Матеріал: 59% бавовна, 39% поліестер, 2% спандекс. Виробник: Carhartt, США Виробник: Carhartt, США."
-        
+
     },
     {
         item: 10004,
@@ -283,4 +283,4 @@ const catalog = [
 
 ]
 console.log(catalog);
-//export { catalog };
+

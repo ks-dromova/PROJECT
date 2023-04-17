@@ -39,7 +39,6 @@ productInfo.forEach(element => {
                             <div class="price__currency">${element.price}&nbsp;$</div>
                         </div>
                     </div>
-                   
                 </div>
                 <div class="cart-item__delete"></div>
             </div>`
@@ -160,4 +159,3 @@ window.addEventListener('click', function (event) {
     }
 });
 
-  

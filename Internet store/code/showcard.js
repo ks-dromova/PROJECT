@@ -1,15 +1,9 @@
-//import { catalog } from "../code/catalog.js";
-//import {cart} from "../code/pagination.js";
-//console.log(cart);
+
 /*----------ПОЛУЧАЕМ ПАРАМЕТРЫ ИЗ URL-----------------------*/
 let params = (new URL(document.location)).searchParams;
 let title = params.get('title');
-console.log(title);
 
 const detail = catalog.find((el) => el.title === title); //записываем в переменную элемент карточку из каталога
-//console.log(el.title);
-console.log(title);
-console.log(detail);
 
     let colors = detail.color.map(function (elem) {
         let colorItem = document.createElement('div');
@@ -28,11 +22,11 @@ console.log(detail);
     sizes = sizes.map(s => s.outerHTML);
 const pasteDetail = document.querySelector('#pastejs');
 
-    
+
     const cardDetail = ` <div class="breadcrumb">
     <ul class="breadcrumb_ul">
         <li><a href="../index.html">HOME</a></li>
-        <li><a href="../page2/index.html">SHORTS</a></li>
+        <li><a href="../view_shorts/index.html">SHORTS</a></li>
        <li>${detail.title}</li>
     </ul>
 </div>
@@ -86,7 +80,7 @@ const pasteDetail = document.querySelector('#pastejs');
                     </div>
                 </div>
             </div>
-        </div>                
+        </div>
     </div>
     <div class="detail_title">DETAILS</div>
     <div class="details">${detail.details}</div>`
@@ -96,9 +90,8 @@ const pasteDetail = document.querySelector('#pastejs');
 /*-----------ДОБАВЛЕНИЕ В КОРЗИНУ-----------------------*/
 
 window.addEventListener('click', function (event) {
-    console.log('click');
-    console.log(event.target);
-   
+
+
     if (event.target.closest('.add_tobag')) {
         console.log('button_cart');
         // Находим обертку кнопки
@@ -107,28 +100,26 @@ window.addEventListener('click', function (event) {
         const btnArt = {
             item: cardWrapper.dataset.id,
         };
-        console.log(btnArt.item);
+
         const elProduct = catalog.find((elem) => elem.item === parseInt(btnArt.item));
-        console.log(elProduct);
+
 
         if(!localStorage.Product){
             localStorage.Product = JSON.stringify([]);
         };
-    
+
         const cart = JSON.parse(localStorage.Product);
         cart.push(elProduct);
-    
+
         //localStorage.setItem('Product', JSON.stringify(cart));
         localStorage.Product = JSON.stringify(cart);
-    
-        console.log(cart);
-    
+
         window.open('/cart/index.html');
-   
+
     }
 });
 
-   
+
 
 
 
