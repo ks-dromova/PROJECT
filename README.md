@@ -8,3 +8,11 @@
 По кнопке ADD TO CART товар добавляется в корзину. Чтобы удалить товар из корзины необходимо нажать на "-" столько раз, чтобы дойти до 0 и товар удалится.
 
 
+# Online store
+
+From the main page, you go to the catalog with shorts in the Shorts header navigation and by clicking the Shop all shorts button.
+
+On the page with the catalog of shorts, you can go to the page with the details of the product you like by clicking on the product card. You can also filter items here.
+choosing the right size and color. The filter can be updated after both color and size are selected. Clicking again on a different size or color will update the filter.
+
+By clicking the ADD TO CART button, the product is added to the cart. To remove an item from the cart, you must click on the "-" so many times to reach 0 and the item will be deleted.
